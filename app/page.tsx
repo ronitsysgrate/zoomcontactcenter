@@ -6,7 +6,7 @@ const Page = () => {
 
     const iframeRef = useRef<HTMLIFrameElement>(null);
 
-    const YOUR_DOMAIN = 'zoomcontactcenter.vercel.app';
+    const YOUR_DOMAIN = 'https://zoomcontactcenter.vercel.app';
 
     const embedUrl = `https://zoom.us/cci/callbar/crm/?origin=${encodeURIComponent(YOUR_DOMAIN)}`;
 
