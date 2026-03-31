@@ -13,10 +13,9 @@ const Page = () => {
     // Optional: Listen for messages from the iframe (call events, etc.)
     useEffect(() => {
         const handleMessage = (event: MessageEvent) => {
-            // Verify origin for security
+            // Only accept messages from zoom.us
             if (event.origin.includes('zoom.us')) {
-                console.log('Zoom Contact Center Event:', event.data);
-                // Handle events like call ringing, connected, etc.
+                console.log('✅ Zoom Contact Center Event:', event.data);
             }
         };
 
